@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>J-Cours | Cours particuliers</title>
+
+    <!-- Polices luxe -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            color: #2f2f2f;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 45px;
+            border: 1px solid #d1d5db;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: #0b1c2d; /* bleu marine */
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #4b5563; /* gris fer */
+            margin-bottom: 35px;
+        }
+
+        .info {
+            background: #f8f9fb;
+            border-left: 6px solid #0b1c2d;
+            padding: 20px;
+            font-size: 16px;
+            margin-bottom: 35px;
+            color: #374151;
+        }
+
+        label {
+            margin-top: 22px;
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            color: #0b1c2d;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 14px;
+            margin-top: 8px;
+            border: 1px solid #9ca3af;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 35px;
+            padding: 16px;
+            background: #0b1c2d;
+            color: #ffffff;
+            border: none;
+            font-size: 17px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #132f4c;
+        }
+
+        .whatsapp {
+            background: #4b5563;
+            margin-top: 15px;
+        }
+
+        .whatsapp:hover {
+            background: #374151;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 14px;
+            color: #6b7280;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>J-Cours</h1>
+    <p class="subtitle">The way to success</p>
+
+    <div class="info">
+        <strong>Tarifs</strong><br><br>
+        • Niveau normal : 20 € / heure<br>
+        • Post-bac : 23 € / heure<br><br>
+
+        <strong>Horaires</strong><br><br>
+        • Lundi, Mardi, Jeudi : 17h – 21h<br>
+        • Mercredi : 14h – 17h<br>
+        • Dimanche : 9h – 13h
+    </div>
+
+    <form action="mailto:jonathanamar_177@hotmail.com" method="post" enctype="text/plain">
+
+        <label>Nom et prénom</label>
+        <input type="text" name="Nom" required>
+
+        <label>Email</label>
+        <input type="email" name="Email" required>
+
+        <label>Matière</label>
+        <select name="Matière">
+            <option>Mathématiques</option>
+            <option>Anglais</option>
+        </select>
+
+        <label>Niveau</label>
+        <select name="Niveau">
+            <option>Normal – 20 €</option>
+            <option>Post-bac – 23 €</option>
+        </select>
+
+        <label>Jour souhaité</label>
+        <select name="Jour">
+            <option>Lundi</option>
+            <option>Mardi</option>
+            <option>Mercredi</option>
+            <option>Jeudi</option>
+            <option>Dimanche</option>
+        </select>
+
+        <label>Heure souhaitée</label>
+        <input type="text" name="Heure" placeholder="Ex : 18h00" required>
+
+        <label>Message complémentaire</label>
+        <textarea name="Message" rows="4"></textarea>
+
+        <button type="submit">Envoyer la demande</button>
+    </form>
+
+    <a href="https://wa.me/33619336183" target="_blank">
+        <button class="whatsapp">Prendre rendez-vous via WhatsApp</button>
+    </a>
+
+    <footer>
+        © J-Cours
+    </footer>
+</div>
+
+</body>
+</html>
